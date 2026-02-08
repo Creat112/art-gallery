@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Art - معرض الفن الرقمي</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Nova Art</h1>
+                <div class="header-controls">
+                    <button class="lang-btn" id="langBtn">
+                        <i class="fas fa-globe"></i>
+                        <span class="lang-text">EN</span>
+                    </button>
+                    <button class="favorites-btn" id="favoritesBtn">
+                        <i class="fas fa-heart"></i>
+                        <span class="favorites-count">0</span>
+                    </button>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle"/>
+                        <span class="slider"></span>
+                        <span class="clouds_stars"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="hero">
+                <h2 class="hero-title" data-ar="اكتشف فنك المفضل" data-en="Discover Your Favorite Art">اكتشف فنك المفضل</h2>
+                <p class="hero-desc" data-ar="معرض فني رقمي يعرض أعمالاً فريدة للفنانين الموهوبين" data-en="Digital art gallery showcasing unique works by talented artists">معرض فني رقمي يعرض أعمالاً فريدة للفنانين الموهوبين</p>
+            </section>
+
+            <section class="gallery" id="gallery">
+                <div class="gallery-grid">
+                    <!-- Gallery items will be dynamically generated -->
+                </div>
+            </section>
+
+            <section class="custom-order" id="customOrder">
+                <div class="custom-order-content">
+                    <div class="custom-order-text">
+                        <h2 class="custom-title" data-ar="اطلب تصميمك المخصص" data-en="Request Your Custom Design">
+                            <i class="fas fa-palette"></i>
+                            <span class="title-text">اطلب تصميمك المخصص</span>
+                        </h2>
+                        <p class="custom-desc" data-ar="هل تحلم بعمل فني فريد؟ فناننا مستعد لتحويل رؤيتك إلى واقع فني مذهل" data-en="Dreaming of a unique artwork? Our artist is ready to transform your vision into a stunning artistic reality">هل تحلم بعمل فني فريد؟ فناننا مستعد لتحويل رؤيتك إلى واقع فني مذهل</p>
+                        <ul class="custom-features">
+                            <li data-ar="تصميم حسب طلبك بالكامل" data-en="Complete design according to your request">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="feature-text">تصميم حسب طلبك بالكامل</span>
+                            </li>
+                            <li data-ar="مشاورات فنية مجانية" data-en="Free artistic consultations">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="feature-text">مشاورات فنية مجانية</span>
+                            </li>
+                            <li data-ar="تسليم خلال وقت محدد" data-en="Delivery within specified time">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="feature-text">تسليم خلال وقت محدد</span>
+                            </li>
+                            <li data-ar="ضمان الجودة والرضا" data-en="Quality and satisfaction guarantee">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="feature-text">ضمان الجودة والرضا</span>
+                            </li>
+                        </ul>
+                        <button class="btn btn-custom-order" id="customOrderBtn">
+                            <i class="fas fa-paint-brush"></i>
+                            <span class="btn-text" data-ar="اطلب تصميمك الآن" data-en="Order Your Design Now">اطلب تصميمك الآن</span>
+                        </button>
+                    </div>
+                    <div class="custom-order-image">
+                        <img src="https://picsum.photos/seed/egyptian-artist/500/400" alt="فنان يعمل">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Product Modal -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="product-details">
+                <div class="product-image">
+                    <img id="modalImage" src="" alt="">
+                </div>
+                <div class="product-info">
+                    <h3 id="modalTitle"></h3>
+                    <p id="modalDescription"></p>
+                    <div class="product-price">
+                        <span id="modalPrice"></span>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-primary" id="whatsappBtn">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="btn-text" data-ar="اطلب عبر الواتساب" data-en="Order via WhatsApp">اطلب عبر الواتساب</span>
+                        </button>
+                        <button class="btn btn-secondary" id="favoriteBtn">
+                            <i class="fas fa-heart"></i>
+                            <span class="btn-text" data-ar="أضف للمفضلة" data-en="Add to Favorites">أضف للمفضلة</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Favorites Modal -->
+    <div class="modal" id="favoritesModal">
+        <div class="modal-content">
+            <span class="close" id="closeFavoritesModal">&times;</span>
+            <h2 class="modal-title" data-ar="المفضلة" data-en="Favorites">المفضلة</h2>
+            <div class="favorites-grid" id="favoritesGrid">
+                <!-- Favorites will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
