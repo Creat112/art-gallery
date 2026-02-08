@@ -487,7 +487,6 @@ body {
     font-weight: bold;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -504,7 +503,6 @@ body {
     }
 }
 
-/* Custom Order Section */
 .custom-order {
     background: linear-gradient(135deg, var(--secondary-color), var(--card-bg));
     padding: 4rem;

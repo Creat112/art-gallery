@@ -4,63 +4,63 @@ const artworks = [
         id: 1,
         title: { ar: "غروب الشمس في الصحراء", en: "Sunset in the Desert" },
         description: { ar: "لوحة فنية تجسد جمال غروب الشمس في الصحراء العربية بألوان دافئة ومشرقة", en: "Artistic painting capturing the beauty of sunset in the Arabian desert with warm and bright colors" },
-        price: { ar: "1,200 ريال", en: "1,200 EGP" },
+        price: { ar: "1,200 جنيه مصري", en: "1,200 EGP" },
         image: "https://picsum.photos/seed/sunset1/400/300"
     },
     {
         id: 2,
         title: { ar: "عمارة إسلامية كلاسيكية", en: "Classical Islamic Architecture" },
         description: { ar: "تصميم فني يعرض تفاصيل العمارة الإسلامية التقليدية بزخارف دقيقة", en: "Artistic design showing details of traditional Islamic architecture with intricate decorations" },
-        price: { ar: "2,500 ريال", en: "2,500 EGP" },
+        price: { ar: "2,500 جنيه مصري", en: "2,500 EGP" },
         image: "https://picsum.photos/seed/islamic2/400/300"
     },
     {
         id: 3,
         title: { ar: "الخيل العربية", en: "Arabian Horses" },
         description: { ar: "لوحة تبرز جمال وقوة الخيل العربية الأصيلة في حركة رشيقة", en: "Painting highlighting the beauty and strength of pure Arabian horses in graceful motion" },
-        price: { ar: "3,000 ريال", en: "3,000 EGP" },
+        price: { ar: "3,000 جنيه مصري", en: "3,000 EGP" },
         image: "https://picsum.photos/seed/horses3/400/300"
     },
     {
         id: 4,
         title: { ar: "زهور الربيع", en: "Spring Flowers" },
         description: { ar: "منظر طبيعي ملون يزدهر بزهور الربيع في حديقة غنّاء", en: "Colorful landscape blooming with spring flowers in a lush garden" },
-        price: { ar: "800 ريال", en: "800 EGP" },
+        price: { ar: "800 جنيه مصري", en: "800 EGP" },
         image: "https://picsum.photos/seed/flowers4/400/300"
     },
     {
         id: 5,
         title: { ar: "المدينة القديمة", en: "The Old City" },
         description: { ar: "مشهد لمدينة عربية قديمة بأسواقها وحاراتها التراثية", en: "Scene of an ancient Arab city with its traditional markets and alleys" },
-        price: { ar: "1,800 ريال", en: "1,800 EGP" },
+        price: { ar: "1,800 جنيه مصري", en: "1,800 EGP" },
         image: "https://picsum.photos/seed/oldcity5/400/300"
     },
     {
         id: 6,
         title: { ar: "البحر الأزرق", en: "The Blue Sea" },
         description: { ar: "لوحة تجريدية تعبر عن عمق وهدوء البحار الزرقاء", en: "Abstract painting expressing the depth and tranquility of blue seas" },
-        price: { ar: "1,500 ريال", en: "1,500 EGP" },
+        price: { ar: "1,500 جنيه مصري", en: "1,500 EGP" },
         image: "https://picsum.photos/seed/ocean6/400/300"
     },
     {
         id: 7,
         title: { ar: "فن الخط العربي", en: "Arabic Calligraphy Art" },
         description: { ar: "عمل فني يجمع بين الخط العربي التقليدي والتصميم العصري", en: "Artwork combining traditional Arabic calligraphy with contemporary design" },
-        price: { ar: "2,200 ريال", en: "2,200 EGP" },
+        price: { ar: "2,200 جنيه مصري", en: "2,200 EGP" },
         image: "https://picsum.photos/seed/calligraphy7/400/300"
     },
     {
         id: 8,
         title: { ar: "الجبال الشاهقة", en: "Majestic Mountains" },
         description: { ar: "منظر طبيعي خلاب لجبال شاهقة تغطيها الثلوج", en: "Breathtaking landscape of towering mountains covered with snow" },
-        price: { ar: "2,800 ريال", en: "2,800 EGP" },
+        price: { ar: "2,800 جنيه مصري", en: "2,800 EGP" },
         image: "https://picsum.photos/seed/mountains8/400/300"
     },
     {
         id: 9,
         title: { ar: "الصحراء الذهبية", en: "The Golden Desert" },
         description: { ar: "كثبان رملية ذهبية تحت ضوء الشمس المشرق", en: "Golden sand dunes under the bright sunlight" },
-        price: { ar: "1,600 ريال", en: "1,600 EGP" },
+        price: { ar: "1,600 جنيه مصري", en: "1,600 EGP" },
         image: "https://picsum.photos/seed/desert9/400/300"
     }
 ];
